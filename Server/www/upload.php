@@ -3,7 +3,7 @@ namespace MimoSDR;
 require('../autoload.php');
 
 // Read JSON file and Import to SQL Database.
-$MimoSDRDB = new Database('/mnt/db/MimoSDR.db');
+$MimoSDRDB = new Database('../MimoSDR.db');
 $Audio = new Audio($MimoSDRDB);
 $Audio->save();
 $Audio->insert(

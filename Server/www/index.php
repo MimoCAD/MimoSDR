@@ -6,7 +6,7 @@ use \DateTimeZone;
 use \TTG\DateTime;
 use \TTG\DateTimeImmutable;
 
-$MimoSDR = new Database('/mnt/db/MimoSDR.db');
+$MimoSDR = new Database('../MimoSDR.db');
 
 $page = new Page($MimoSDR);
 $page->title('Software Defined Radio');
